@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Issues Tracker</title>
+
+    <!-- tailwind + daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="login-form container w-8/12 mx-auto  flex flex-col items-center content-center mt-20 p-10 bg-gray-100 rounded-lg">
+            <div class="flex flex-col justify-center items-center pb-3" >
+                <div>
+                    <img src="./assets/github-logo.png" alt="">
+                </div>
+                <div>
+                    <h2 class="text-center text-2xl font-bold pt-5">GitHub Issues Tracker</h2>
+                    <p class="text-center text-slate-600">Sign in to manage your issues</p>
+                </div>
+            </div>
+            <div class="">
+                <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+                    <legend class="fieldset-legend"></legend>
+                
+                    <label class="label">Username</label>
+                    <input type="email" class="input" placeholder="Enter Username" />
+                
+                    <label class="label">Password</label>
+                    <input type="password" class="input" placeholder="Enter Password" />
+                
+                    <button class="btn btn-primary mt-4">Sign in</button>
+                </fieldset>
+                <p class="text-center pt-4 text-1xl font-bold">OR</p>
+                <div class="bg-gray-50 p-4 text-center rounded-md">
+                    <p class="font-bold pb-3">Demo Credentials:</p>
+                    <p>Username: admin</p>
+                    <p>Password: admin123</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
