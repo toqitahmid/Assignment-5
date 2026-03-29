@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Issues Tracker</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Hind+Siliguri:wght@300;400;500;600;700&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind + daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: "Geist", "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body id="home-section">
+    <header id="header-section" class="flex justify-between bg-zinc-100 p-5">
+        <div class="flex items-center gap-2">
+            <img class="size-10" src="./assets/github-logo.png" alt="">
+            <h1 class="text-2xl font-bold">GitHub Issues Tracker</h1>
+        </div>
+        <div class="flex justify-end gap-5">
+            <div>
+                <label class="input">
+                    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                            stroke="currentColor">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                        </g>
+                    </svg>
+                    <input type="search" required placeholder="Search" />
+                </label>
+            </div>
+            <div>
+                <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> New Issue</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="w-11/12 mx-auto">
+        <div class="bg-gray-100 mt-10 p-5 rounded-md">
+            <div class="flex gap-3">
+                <button class="btn btn-outline w-25">All</button>
+                <button class="btn btn-outline w-25">Open</button>
+                <button class="btn btn-outline w-25">Closed</button>
+            </div>
+        </div>
+        <div class="bg-gray-100 mt-10 p-5 rounded-md">
+            <div class="flex justify-between">
+                <div class="flex items-center gap-2">
+                    <div><img src="./assets/Aperture.png" alt=""></div>
+                    <div>
+                        <p class="text-xl font-bold">50 Issues</p>
+                        <p>Track and manage your project issues</p>
+                    </div>
+                </div>
+                <div class="flex gap-5 items-center">
+                    <p><i class="fa-regular fa-circle bg-green-500 rounded-full"></i> Open</p>
+                    <p><i class="fa-regular fa-circle bg-purple-500 rounded-full"></i> Closed</p>
+                </div>
+            </div>
+        </div>
+        <hr class="text-slate-400">
+
+        <!-- issue cards  -->
+        <div id="issue-cards" class="bg-gray-100 p-5 rounded-md grid grid-cols-4 gap-5">
+                <!-- <div class="bg-green-500 rounded-md">
+                    <div class="p-5 bg-white mt-1 rounded-md">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <img src="./assets/Open-Status.png" alt="">
+                            </div>
+                            <div><p class="btn btn-soft btn-secondary rounded-full w-25">P: High</p></div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold pt-3">T: Fix navigation menu on mobile devices</h3>
+                            <p class="text-slate-500 pt-2">D: The navigation menu doesn't collapse properly on mobile devices...</p>
+                        </div>
+                        <div class="flex justify-start gap-5 pt-5 pb-5">
+                                <p class="btn btn-soft btn-secondary rounded-full w-25">L: Bug</p>
+                                <p class="btn btn-soft btn-warning rounded-full w-35">L: Help wanted</p>
+                            </div>
+                            <hr>
+                            <div class="flex justify-between items-center pt-5">
+                                <p>Author</p>
+                                <p>createAt</p>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p>assignee</p>
+                                <p>updatedAt</p>
+                            </div>
+                    </div>
+                </div> -->
+        </div>
+    </section>
+
+    <script src="./JS/issue.js"></script>
+    <script src="./JS/dynamic_Change.js"></script>
+</body>
+
+</html>
