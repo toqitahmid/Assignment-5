@@ -17,7 +17,7 @@ const displayIssues = (issueInfo) => {
 
     const infoCard = document.createElement("div");
     infoCard.innerHTML = `
-                    <div class="p-5">
+                    <div onclick="issueModal(${Info.id}),my_modal_5.showModal()" class="p-5">
                         <div class="flex justify-between items-center">
                             <div class = "show-vardict size-7">
                             </div>
@@ -27,9 +27,7 @@ const displayIssues = (issueInfo) => {
                             <h3 class="text-xl font-bold pt-3">${Info.title}</h3>
                             <p class="text-slate-500 pt-2">${Info.description}</p>
                         </div>
-                        <div class="flex justify-start gap-5 pt-5 pb-5">
-                                <p class="btn btn-soft btn-secondary rounded-full w-25">L: Bug</p>
-                                <p class="btn btn-soft btn-warning rounded-full w-35">L: Help wanted</p>
+                        <div class="flex justify-start gap-5 pt-5 pb-5">${createElements(Info.labels)}
                             </div>
                             <hr>
                             <div class="flex justify-between items-center pt-5">
