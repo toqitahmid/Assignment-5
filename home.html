@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Issues Tracker</title>
+    <title>GitHub Issues Tracker | Home Page</title>
+    <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,9 +58,9 @@
     <section class="w-11/12 mx-auto">
         <div class="bg-gray-100 mt-10 p-5 rounded-md">
             <div class="flex gap-3">
-                <button class="btn btn-outline w-25">All</button>
-                <button class="btn btn-outline w-25">Open</button>
-                <button class="btn btn-outline w-25">Closed</button>
+                <button id="all-btn" class="btn btn-outline w-25">All</button>
+                <button id="open-btn" class="btn btn-outline w-25">Open</button>
+                <butto id="closed-btn" class="btn btn-outline w-25">Closed</butto>
             </div>
         </div>
         <div class="bg-gray-100 mt-10 p-5 rounded-md">
@@ -67,7 +68,7 @@
                 <div class="flex items-center gap-2">
                     <div><img src="./assets/Aperture.png" alt=""></div>
                     <div>
-                        <p class="text-xl font-bold">50 Issues</p>
+                        <p class="text-xl font-bold"><span id="issue-count">50</span> Issues</p>
                         <p>Track and manage your project issues</p>
                     </div>
                 </div>
@@ -113,6 +114,7 @@
 
     <script src="./JS/issue.js"></script>
     <script src="./JS/dynamic_Change.js"></script>
+    <script src="./JS/showIssues.js"></script>
 </body>
 
 </html>
