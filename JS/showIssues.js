@@ -26,6 +26,7 @@ const filterIssues = (status) => {
 }
 
 const issueCounter = (filterd) => {
+    
     const issueCount = document.getElementById("issue-count");
     issueCount.innerText = filterd.length;
 }
